@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="index.html#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="index.html#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="index.html#top"></a>
+            </li>
+            <li>
+                <a href="index.html#top">Home</a>
+            </li>
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+            <li>
+                <a href="index.html#services">Services</a>
+            </li>
+            <li>
+                <a href="index.html#cta">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <font color="ffffff"> 
+                <h1>Become a Counsellor</h1>
+                <h3> Study one day a week, no upfront costs <br>+ the opportunity to travel to europe!</h3>
+                <br><h5> Classes starting in November! </h5>
+            </font>    
+            <br>
+
+            <div class="container">
+            <div class="signup-wrapper animated hiding" data-animation="bounceInUp" data-delay="0">
+                <div class="row">
+                        <form class="form-inline form-register form-register-small" method="post" action="signup.php">
+                        
+                            <div class="form-group">
+                                <input size="30" type="text" class="form-control required" name="fullname" id="fullname" placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input size="25" type="email" class="form-control required email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group password-wrapper">
+                                <input type="text" class="form-control required" name="Mobile" id="Mobile" placeholder="Mobile">
+                            </div>
+                            <div class="form-group submit-wrap">
+                                <input type="hidden" name="small-form"/>
+                                <button type="submit" class="btn btn-primary btn-md">Show me more</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+            <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+    <% if Rails.application.config.ended %>
+        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
+        <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
+        <p class="again brandon">Thank You Again!</p>
+    <% else %>
+        
+        <p class="byline brandon"></p>
+        <%= form_for @user, :url => { :action => "create" } do |f| %>
+            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
+            <input class="submit brandon" name="commit" type="submit" value="Tell Me More" />
+        <% end %>
+    <% end %>
+</div></div>
+
+    </header>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Why Study With Community Training Australia?</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-paper-plane-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>EuroTrip Included</strong>
+                                </h4>
+                                <p>As apart of your placement, you travel from London - Rome. <br>Yes! Scholarships are available.</p>
+                                <a href="index.html#cta" data-toggle="modal" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-check fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Vet Fee Help</strong>
+                                </h4>
+                                <p>No Deposit, No Upfront fees, repay only when you're making 51k+ </p>
+                                <a href="index.html#cta" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-clock-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>1 Day a week.</strong>
+                                </h4>
+                                <p>Yes, Full time study is only one day a week in the heart of Maroochydore. </p>
+                                <a href="index.html#cta" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Fast Track Your Uni Degree</strong>
+                                </h4>
+                                <p>Recieve up to 1 year of Social Work or Psychology with a Diploma of Counselling</p>
+                                <a href="index.html#cta" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+             <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   
+                    <h3>Need a little more Information?</h3>
+                     <p class="lead">We get that, here it is.</p>
+                     <a data-toggle="modal" data-target="#outlay" class="btn btn-lg btn-dark">Course Outlay</a>
+                     <a data-toggle="modal" data-target="#entry" class="btn btn-lg btn-light">Entry Requirements</a>
+                     <a data-toggle="modal" data-target="#coursecosts" class="btn btn-lg btn-dark">Course Costs</a> 
+
+                </div>
+            </div>
+        </div>
+    </aside>
+
+   
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+      <section id="cta"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Start Your Application.</h3>
+                    <p class="lead">And we will email you the full perspective</p>
+                    <div class="container">
+            <div class="signup-wrapper animated hiding" data-animation="bounceInUp" data-delay="0">
+                <div class="row">
+                        <form class="form-inline form-register form-register-small" method="post" action="signup.php">
+                        
+                            <div class="form-group">
+                                <input size="30" type="text" class="form-control required" name="fullname" id="fullname" placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input size="25" type="email" class="form-control required email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group password-wrapper">
+                                <input type="text" class="form-control required" name="Mobile" id="Mobile" placeholder="Mobile">
+                            </div>
+                            <div class="form-group submit-wrap">
+                                <input type="hidden" name="small-form"/>
+                                <button type="submit" class="btn btn-primary btn-md">Show me more</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+                     <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+                     <% if Rails.application.config.ended %>
+                     <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+                     <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
+                    <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
+                     <p class="again brandon">Thank You Again!</p>
+                      <% else %>
+        
+                     <p class="byline brandon"></p>
+                     <%= form_for @user, :url => { :action => "create" } do |f| %>
+                      <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
+                    <input class="submit brandon" name="commit" type="submit" value="Tell Me More" />
+        <% end %>
+    <% end %>
+</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                     <img class="img-portfolio img-responsive" src="img/logo.png">
+                    <p>Sunshine Coast Campus<br> Plaza Links, Maroochydore, Sunshine Coast QLD</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (07) 5441 0555</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">jake@cta.com.au</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="index.html#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="index.html#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                      
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Community Training Australia Pty Ltd (RTO: 31905) | ABN: 28 110 125 838 | CTA is an approved VET provider (#7002)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+
+
+<!-- Course Outlay -->
+<div class="modal fade" id="outlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h2 class="modal-title" id="myModalLabel">Course Outlay</h2>
+      </div>
+      <div class="modal-body">
+       As a career, counselling can offer personal fulfilment through seeing individuals and families assisted during difficult periods in their lives. Counselling skills can assist in many other work fields as well including health care, employment services, human resource management, education and welfare work.<br><br>
+Even psychologists and social workers, who spend a great deal of their time counselling, can enhance their skills through a training program that explicitly teaches counselling interview skills. We have also built into our program a wealth of extra information which will help you do an exceptional job of supporting others in their personal healing and life direction.
+This course is our signature program. You will learn not only how to conduct a counselling interview but also practical therapies and strategies including:<br><br>
+• Decision making<br>
+• Grief and loss therapeutic conversations<br>
+• Suicide intervention<br>
+• Sand tray therapy<br>
+• Body and energy therapies<br>
+• Art and play therapy<br>
+• Behaviour Therapy<br>
+• Person Centred Therapy<br>
+• Cognitive Behavioural Therapy... and many
+more.<br>
+• Visual therapies for cross cultural work and
+children’s work<br><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Entry Requirements -->
+<div class="modal fade" id="entry" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h2 class="modal-title" id="myModalLabel">Entry Requirements</h2>
+      </div>
+      <div class="modal-body">
+        To gain entry into CHC51712 Diploma of Counselling it is recommended that you have sufficient relevant work experience to indicate likely success at this level of qualification in a job role, involving:<br><br>
+• The self-directed application of knowledge with substantial depth in some areas.<br>
+• The exercise of independent judgement and decision-making.<br>
+• The application of relevant technical and other skills.<br><br>
+As part of your enrolment application you will be required to complete a questionnaire to assess the above points as well as your personal maturity and suitability to become a counsellor.<br>
+Part of this questionnaire includes a Language, Literacy and Numeracy (LLN) quiz that will help us to determine the level of support that we will need to provide you through your course.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Course Costs -->
+<div class="modal fade" id="coursecosts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h2 class="modal-title" id="myModalLabel">Course Costs</h2>
+      </div>
+      <div class="modal-body">
+         <img class="img-portfolio img-responsive" src="img/coursecosts.png">
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-primary" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
