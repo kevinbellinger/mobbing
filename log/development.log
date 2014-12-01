@@ -14503,3 +14503,270 @@ Served asset /reset.css - 304 Not Modified (0ms)
 
 Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:08:20 +0100
 Served asset /core.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:12:36 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 27ms (Views: 15.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:12:36 +0100
+Served asset /reset.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:12:36 +0100
+Served asset /core.css - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:20:29 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:20:29 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:20:29 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:21:15 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:21:15 +0100
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:21:15 +0100
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:31:46 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:31:46 +0100
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:31:46 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:32:29 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:32:29 +0100
+Served asset /reset.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:32:29 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:33:10 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:33:10 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:33:10 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:33:50 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:33:50 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:33:50 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:34:39 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:34:39 +0100
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:34:39 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:44:57 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:44:57 +0100
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:44:57 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:46:44 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:46:44 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:46:44 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:48:14 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:48:14 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:48:14 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:48:54 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:48:54 +0100
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:48:54 +0100
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:50:06 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 35ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:50:06 +0100
+Served asset /reset.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:50:06 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:56:39 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:56:39 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:56:39 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 14:59:04 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 14:59:04 +0100
+Served asset /reset.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 14:59:04 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 15:01:20 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 15:01:20 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 15:01:20 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 15:02:06 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 15:02:06 +0100
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 15:02:06 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 15:07:32 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 15:07:32 +0100
+Served asset /core.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 15:07:32 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 15:08:16 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 15:08:16 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 15:08:16 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
