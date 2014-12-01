@@ -172,7 +172,7 @@ DEPENDENCIES
   delayed_job_active_record
   pg (= 0.17.1)
   pry
-  rails (= 3.2.11)
+  rails
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   unicorn

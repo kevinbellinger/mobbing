@@ -14770,3 +14770,18 @@ Served asset /core.css - 304 Not Modified (0ms)
 
 Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 15:08:16 +0100
 Served asset /reset.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 18:26:20 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 32ms (Views: 22.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-01 18:26:21 +0100
+Served asset /core.css - 200 OK (8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 18:26:21 +0100
+Served asset /reset.css - 200 OK (1ms)
