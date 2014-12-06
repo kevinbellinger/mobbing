@@ -13,25 +13,25 @@ class User < ActiveRecord::Base
     REFERRAL_STEPS = [
         {
             'count' => 1,
-            "html" => "$50 <br>Myer Gift Card",
+            "html" => "3 months of<br>Glider.io",
             "class" => "two",
             "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
         },
         {
             'count' => 2,
-            "html" => "$100<br>Myer Gift Card",
+            "html" => "6 months of <br>Glider.io",
             "class" => "three",
             "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
         },
         {
             'count' => 3,
-            "html" => "$150<br>Gift Card",
+            "html" => "12 months of <br>Glider.io",
             "class" => "four",
             "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
         },
         {
             'count' => 4,
-            "html" => "$200<br>Gift Card",
+            "html" => "Glider.io free forever",
             "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
         }

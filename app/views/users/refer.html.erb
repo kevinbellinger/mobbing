@@ -2,21 +2,21 @@
 
 <div class="header">
     <div class="content">
-        <p class="byline brandon"><font color="000000">We Just Emailed You The  Prospectus</p></font>
+        <p class="byline brandon"><font color="FFFFFF">Thanks for signing up to hear more as we progress</p></font>
     </div>
 </div>
 
 <div class="hero">
     <div class="page-content clearfix">
         <div class="mammoth">
-            <span class="need brandon">Don't leave your friends behind </span>
+            <span class="need brandon">Help us spread the word </span>
         </div>
         <div class="share-wrap">
-            <p class="why brandon">Study & Travel with your friends</p>
+            <p class="why brandon">Share our service with other parents</p>
             <p class="title brandon">Invite them &<br>Earn rewards</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn rewards for<br>each friend who signs up.</p>
+            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and we'll reward you for<br>each friend who also signs up to stay informed of our progress.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+            <% twitter_message = "#StopCyberBullys Help @Mobbing make a difference!" %>
             <div class="social-links">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
                 <div class="sep"></div>
@@ -47,7 +47,7 @@
     <div class="page-content">
         <p class="callout brandon">Here's How It Works:</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+            <li class="title brandon"><p class="friends">Friends Tracking our progress</p><p class="rewards">Glider Months Free </p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>

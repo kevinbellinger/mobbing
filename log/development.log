@@ -14858,3 +14858,1072 @@ Served asset /core.css - 304 Not Modified (0ms)
 
 Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:36:21 +0100
 Served asset /reset.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:32:49 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 28.0ms (Views: 19.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:32:49 +0100
+Served asset /reset.css - 200 OK (3ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:32:49 +0100
+Served asset /core.css - 200 OK (6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:32:49 +0100
+Served asset /favicon.ico - 200 OK (6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:32:50 +0100
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-02 18:33:40 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmyFzgPDslHM89JZBusUPe/HALZV3fbvZQDKSTG9WEg=", "user"=>{"email"=>"kevin@kevin.com"}, "commit"=>"Tell Me More"}
+  [1m[36mUser Load (4.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1[0m
+  [1m[35mIpAddress Load (4.1ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 36.5ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:33:40 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4.6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-02 18:33:45 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmyFzgPDslHM89JZBusUPe/HALZV3fbvZQDKSTG9WEg=", "user"=>{"email"=>""}, "commit"=>"Tell Me More"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+  [1m[35mIpAddress Load (0.3ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 1.9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:33:46 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3.5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-02 18:33:46 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmyFzgPDslHM89JZBusUPe/HALZV3fbvZQDKSTG9WEg=", "user"=>{"email"=>""}, "commit"=>"Tell Me More"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+  [1m[35mIpAddress Load (0.5ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 3.3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:33:46 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3.7ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-02 18:33:46 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmyFzgPDslHM89JZBusUPe/HALZV3fbvZQDKSTG9WEg=", "user"=>{"email"=>""}, "commit"=>"Tell Me More"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+  [1m[35mIpAddress Load (0.3ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 1.7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:33:46 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3.4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-02 18:33:53 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmyFzgPDslHM89JZBusUPe/HALZV3fbvZQDKSTG9WEg=", "user"=>{"email"=>"kevin@kevin.com"}, "commit"=>"Tell Me More"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1[0m
+  [1m[35mIpAddress Load (0.6ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 2.6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:33:53 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4.5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (127.1ms)[0m  [1mDROP DATABASE IF EXISTS "prelaunchr"[0m
+  [1m[35m (1.2ms)[0m  DROP DATABASE IF EXISTS "prelaunchr"
+  [1m[36m (344.6ms)[0m  [1mCREATE DATABASE "prelaunchr" ENCODING = 'utf8'[0m
+  [1m[35m (19.5ms)[0m  CREATE TABLE "active_admin_comments" ("id" serial primary key, "resource_id" character varying(255) NOT NULL, "resource_type" character varying(255) NOT NULL, "author_id" integer, "author_type" character varying(255), "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "namespace" character varying(255)) 
+  [1m[36m (1.5ms)[0m  [1mCREATE INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (1.1ms)[0m  CREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")
+  [1m[36m (1.4ms)[0m  [1mCREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (10.0ms)[0m  CREATE TABLE "admin_users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "delayed_jobs" ("id" serial primary key, "priority" integer DEFAULT 0, "attempts" integer DEFAULT 0, "handler" text, "last_error" text, "run_at" timestamp, "locked_at" timestamp, "failed_at" timestamp, "locked_by" character varying(255), "queue" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "ip_addresses" ("id" serial primary key, "address" character varying(255), "count" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "referral_code" character varying(255), "referrer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (1.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (4.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130312045541')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130126215239')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130127063936')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130127063939')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130127063940')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130227185712')[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAdminUser Exists (1.4ms)[0m  SELECT 1 AS one FROM "admin_users" WHERE "admin_users"."email" = 'admin@giggity.com' LIMIT 1
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "admin_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["created_at", Tue, 02 Dec 2014 17:34:14 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@giggity.com"], ["encrypted_password", "$2a$10$6KyIp57SZ/X.pe56Y0CuJe/aFQKUgzQROMFBem49kqFTLB/pXdBEy"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 02 Dec 2014 17:34:14 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:34:35 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 21.9ms (Views: 13.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:34:38 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3.9ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:34:43 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5.2ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:34:43 +0100
+Served asset /core.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:34:43 +0100
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmyFzgPDslHM89JZBusUPe/HALZV3fbvZQDKSTG9WEg=", "user"=>{"email"=>"kevin@kevin.com"}, "commit"=>"Tell Me More"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1[0m
+  [1m[35mIpAddress Load (0.5ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "ip_addresses" ("address", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["address", nil], ["count", 0], ["created_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00], ["updated_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "ip_addresses" SET "count" = 1, "updated_at" = '2014-12-02 17:34:48.701770' WHERE "ip_addresses"."id" = 1[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."referral_code" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."referral_code" IS NULL LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."referral_code" = '9a833c00c6' LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("created_at", "email", "referral_code", "referrer_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00], ["email", "kevin@kevin.com"], ["referral_code", "9a833c00c6"], ["referrer_id", nil], ["updated_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00]]
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "delayed_jobs" ("attempts", "created_at", "failed_at", "handler", "last_error", "locked_at", "locked_by", "priority", "queue", "run_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["attempts", 0], ["created_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00], ["failed_at", nil], ["handler", "--- !ruby/object:Delayed::PerformableMailer\nobject: !ruby/class 'UserMailer'\nmethod_name: :signup_email\nargs:\n- !ruby/object:User\n  attributes:\n    id: 1\n    email: kevin@kevin.com\n    referral_code: 9a833c00c6\n    referrer_id: \n    created_at: &1 2014-12-02 17:34:48.712695000 Z\n    updated_at: *1\n"], ["last_error", nil], ["locked_at", nil], ["locked_by", nil], ["priority", 0], ["queue", nil], ["run_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00], ["updated_at", Tue, 02 Dec 2014 17:34:48 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/refer-a-friend
+Completed 302 Found in 94.8ms (ActiveRecord: 23.4ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 1
+  Rendered users/refer.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 17.6ms (Views: 15.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/winston@2x.png - 200 OK (4ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/blade-explain@2x.png - 200 OK (4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/truman@2x.png - 200 OK (15ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/mammoth@2x.png - 200 OK (11ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/fb@2x.png - 200 OK (3ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/progress-bg@2x.png - 200 OK (7ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/twit@2x.png - 200 OK (3ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-02 18:34:48 +0100
+Served asset /refer/progress-done@2x.png - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1[0m
+Redirected to http://localhost:3000/refer-a-friend
+Filter chain halted as :skip_first_page rendered or redirected
+Completed 302 Found in 1.7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5.9ms (Views: 4.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (39ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /favicon.ico - 304 Not Modified (2ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:39:45 +0100
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 18:39:55 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4.2ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:39:55 +0100
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:39:55 +0100
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5.7ms (Views: 4.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:41:27 +0100
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7.4ms (Views: 6.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-02 18:42:01 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'kevin@kevin.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7.5ms (Views: 5.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-02 18:42:32 +0100
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 08:38:33 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10.4ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:38:34 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:38:34 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 08:38:58 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7.4ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:38:58 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:38:58 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 08:39:10 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3.3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:39:10 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:39:10 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 08:39:21 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8.0ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:39:21 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:39:21 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BqtasenlVLiGW9kaVziQ1xmIT7/HPqgxobMcas5oFo0=", "user"=>{"email"=>"test@test1.com"}, "commit"=>"Tell Me More"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1
+  [1m[36mIpAddress Load (0.4ms)[0m  [1mSELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "ip_addresses" SET "count" = 2, "updated_at" = '2014-12-03 07:39:27.234953' WHERE "ip_addresses"."id" = 1[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."referral_code" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."referral_code" IS NULL LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."referral_code" = '34514efe09' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("created_at", "email", "referral_code", "referrer_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Wed, 03 Dec 2014 07:39:27 UTC +00:00], ["email", "test@test1.com"], ["referral_code", "34514efe09"], ["referrer_id", nil], ["updated_at", Wed, 03 Dec 2014 07:39:27 UTC +00:00]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "delayed_jobs" ("attempts", "created_at", "failed_at", "handler", "last_error", "locked_at", "locked_by", "priority", "queue", "run_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["attempts", 0], ["created_at", Wed, 03 Dec 2014 07:39:27 UTC +00:00], ["failed_at", nil], ["handler", "--- !ruby/object:Delayed::PerformableMailer\nobject: !ruby/class 'UserMailer'\nmethod_name: :signup_email\nargs:\n- !ruby/object:User\n  attributes:\n    id: 2\n    email: test@test1.com\n    referral_code: 34514efe09\n    referrer_id: \n    created_at: &1 2014-12-03 07:39:27.245104000 Z\n    updated_at: *1\n"], ["last_error", nil], ["locked_at", nil], ["locked_by", nil], ["priority", 0], ["queue", nil], ["run_at", Wed, 03 Dec 2014 07:39:27 UTC +00:00], ["updated_at", Wed, 03 Dec 2014 07:39:27 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/refer-a-friend
+Completed 302 Found in 21.8ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2
+  Rendered users/refer.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7.6ms (Views: 6.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-03 08:39:27 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2
+  Rendered users/refer.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 17.8ms (Views: 7.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-03 08:45:08 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2
+  Rendered users/refer.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12.1ms (Views: 4.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-03 08:46:04 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2
+  Rendered users/refer.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10.7ms (Views: 4.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-03 08:46:28 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2
+  Rendered users/refer.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11.4ms (Views: 4.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/mammoth@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/mammoth@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-03 08:47:26 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
