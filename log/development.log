@@ -17750,3 +17750,768 @@ Served asset /core.css - 304 Not Modified (0ms)
 
 Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-08 23:03:10 +0100
 Served asset /reset.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1[0m
+Redirected to http://localhost:3000/refer-a-friend
+Filter chain halted as :skip_first_page rendered or redirected
+Completed 302 Found in 19.8ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2[0m
+  Rendered users/refer.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 32.5ms (Views: 30.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /core.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/refer/help@2x.jpg" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/help@2x.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-10 12:49:27 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (1ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2[0m
+  Rendered users/refer.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5.6ms (Views: 4.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/help@2x.jpg" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/help@2x.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-10 12:50:51 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2014-12-10 12:52:06 +0100
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3.8ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 12:52:06 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 12:52:06 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2014-12-10 13:11:44 +0100
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2.9ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:11:44 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:11:44 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2014-12-10 13:12:29 +0100
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'test@test1.com' LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = 2[0m
+  Rendered users/refer.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6.5ms (Views: 4.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:12:29 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/cream-tooltip@2x.png" for 127.0.0.1 at 2014-12-10 13:12:29 +0100
+Served asset /refer/cream-tooltip@2x.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/refer/cream-tooltip@2x.png"):
+  actionpack (3.2.21) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.21) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.21) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.21) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.21) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.21) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.21) lib/rails/engine.rb:484:in `call'
+  railties (3.2.21) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.21) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kevinb/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.21/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/truman@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/truman@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/twit@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/twit@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/winston@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/winston@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/blade-explain@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/blade-explain@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/fb@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/fb@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/help@2x.jpg" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/help@2x.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/progress-bg@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done@2x.png" for 127.0.0.1 at 2014-12-10 13:12:30 +0100
+Served asset /refer/progress-done@2x.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:12:50 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7.1ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:12:50 +0100
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:12:50 +0100
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:15:08 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7.1ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:20:47 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6.8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:21:52 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7.3ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:23:27 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5.8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:23:27 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:23:27 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:24:41 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5.6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:24:41 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:24:41 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:30:45 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6.1ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:30:46 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:30:46 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-10 13:32:20 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 6.6ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-10 13:32:20 +0100
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2014-12-10 13:32:20 +0100
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-10 13:33:03 +0100
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1.3ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2014-12-10 13:33:03 +0100
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/devise/shared/_links.erb (1.1ms)
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (72.9ms)
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/a4eb902049932806b6423c6a2d7b199b31f614e1/active_admin.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/_mixins.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_all.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_variables.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_reset.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_gradients.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_shadows.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_icons.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_rounded.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_buttons.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_sections.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_utilities.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_typography.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/d5ede02af4009e27a691319cf10a3f2783247ba5/_bourbon.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c7352d601d00a7563aea432ad1962bdfe6632a6c/_prefixer.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c7352d601d00a7563aea432ad1962bdfe6632a6c/_px-to-em.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c7352d601d00a7563aea432ad1962bdfe6632a6c/_asset-pipeline.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/505ee7eab11acd3e5f401694ca61a79a258fe53a/_gradient-positions-parser.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/505ee7eab11acd3e5f401694ca61a79a258fe53a/_linear-positions-parser.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/505ee7eab11acd3e5f401694ca61a79a258fe53a/_radial-arg-parser.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/505ee7eab11acd3e5f401694ca61a79a258fe53a/_radial-positions-parser.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/505ee7eab11acd3e5f401694ca61a79a258fe53a/_render-gradients.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/505ee7eab11acd3e5f401694ca61a79a258fe53a/_shape-size-stripper.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_color-lightness.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_flex-grid.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_golden-ratio.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_grid-width.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_linear-gradient.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_modular-scale.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_px-to-em.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_px-to-rem.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_radial-gradient.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_strip-units.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_tint-shade.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_transition-property-name.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/ca4cdcd99b52f652e547a8a59c1b6f114303ed2d/_unpack.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_animation.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_appearance.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_backface-visibility.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_background.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_background-image.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_border-image.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_border-radius.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_box-sizing.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_calc.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_columns.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_filter.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_flex-box.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_font-face.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_font-feature-settings.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_hyphens.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_hidpi-media-query.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_image-rendering.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_inline-block.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_keyframes.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_linear-gradient.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_perspective.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_radial-gradient.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_transform.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_transition.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_user-select.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/8ca28d9a4a826c6622063cc9f28ab21dc44a0a18/_placeholder.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_button.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_clearfix.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_directional-values.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_ellipsis.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_font-family.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_hide-text.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_html5-input-types.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_position.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_prefixer.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_retina-image.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_size.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_timing-functions.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_triangle.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/c319e0df35c62b65f6048ccd5eb5ae26398c928b/_word-wrap.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/d5ede02af4009e27a691319cf10a3f2783247ba5/_bourbon-deprecated-upcoming.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/_base.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/_typography.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/_header.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/_forms.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_comments.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_flash_messages.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_date_picker.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_popovers.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_tables.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_batch_actions.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_blank_slates.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_dropdown_menu.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_buttons.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_grid.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_links.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_pagination.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_panels.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_columns.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_scopes.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_status_tags.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_table_tools.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/998e6b5373b05868bd086a429565418065be8a7f/_index_list.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/79e6947a75e0b89398bfffbfd52e12c63d6f7a5a/_logged_out.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/e8a94f43e78ab27f9bcdf7bb1818d19896656e5d/_footer.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/e8a94f43e78ab27f9bcdf7bb1818d19896656e5d/_main_structure.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/e8a94f43e78ab27f9bcdf7bb1818d19896656e5d/_title_bar.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Compiled active_admin.css  (1129ms)  (pid 97633)
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/print.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/495f33216ac885358b4e7150eb702a45babfab9d/_reset.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Warning. Error encountered while saving cache /Users/kevinb/code/prelaunchr/tmp/cache/sass/991327ecb24612fbc205cf2f29f0c1946eb7c929/_typography.css.scssc: can't dump anonymous class #<Class:0x00000102995680>
+
+Compiled active_admin/print.css  (81ms)  (pid 97633)
+Compiled jquery.js  (3ms)  (pid 97633)
+Compiled jquery-ui.js  (5ms)  (pid 97633)
+Compiled jquery_ujs.js  (0ms)  (pid 97633)
+Compiled active_admin/lib/namespace.js  (255ms)  (pid 97633)
+Compiled active_admin/components/jquery.aa.checkbox-toggler.js  (135ms)  (pid 97633)
+Compiled active_admin/components/jquery.aa.dropdown-menu.js  (140ms)  (pid 97633)
+Compiled active_admin/components/jquery.aa.popover.js  (140ms)  (pid 97633)
+Compiled active_admin/components/jquery.aa.table-checkbox-toggler.js  (122ms)  (pid 97633)
+Compiled active_admin/pages/application.js  (118ms)  (pid 97633)
+Compiled active_admin/pages/batch_actions.js  (120ms)  (pid 97633)
+Compiled active_admin/application.js  (1060ms)  (pid 97633)
+Compiled active_admin/base.js  (1098ms)  (pid 97633)
+Compiled active_admin.js  (1104ms)  (pid 97633)
+Completed 200 OK in 2448.1ms (Views: 2439.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin.css - 200 OK (10ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/lib/namespace.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /jquery-ui.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/components/jquery.aa.popover.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/pages/application.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/pages/batch_actions.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/application.js - 200 OK (5ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:05 +0100
+Served asset /active_admin/base.js - 200 OK (9ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-10 13:33:06 +0100
+Served asset /active_admin.js - 200 OK (47ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-10 13:33:06 +0100
+Served asset /active_admin/print.css - 200 OK (3ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2014-12-10 13:33:35 +0100
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OmLC6mXPuxryCsb800brJ+jrnQY3EMWCnceXs36EoWw=", "admin_user"=>{"email"=>"admin@giggity.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mAdminUser Load (4.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = 'admin@giggity.com' LIMIT 1
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (7.0ms)[0m  UPDATE "admin_users" SET "last_sign_in_at" = '2014-12-10 12:33:35.513339', "current_sign_in_at" = '2014-12-10 12:33:35.513339', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2014-12-10 12:33:35.515391' WHERE "admin_users"."id" = 1
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 108.9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-10 13:33:35 +0100
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/page/index.html.arb (26.5ms)
+Completed 200 OK in 33.5ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-12-10 13:33:37 +0100
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (2.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (1.9ms)[0m  SELECT "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT 30 OFFSET 0
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/index.html.arb (54.0ms)
+Completed 200 OK in 60.8ms (Views: 51.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-12-10 13:33:37 +0100
+Served asset /active_admin/orderable.png - 200 OK (3ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at 2014-12-10 13:33:41 +0100
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (3.4ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = 'admin'
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = 'admin' LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mSQL (2.1ms)[0m  SELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/index.html.arb (119.5ms)
+Completed 200 OK in 126.7ms (Views: 114.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-12-10 13:33:41 +0100
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (4ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2014-12-10 13:33:45 +0100
+Processing by Admin::UsersController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/index.html.arb (108.6ms)
+Completed 200 OK in 113.6ms (Views: 108.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/users?utf8=%E2%9C%93&q%5Breferrals_id_eq%5D=1&commit=Filter&order=id_desc" for 127.0.0.1 at 2014-12-10 13:33:56 +0100
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"referrals_id_eq"=>"1"}, "commit"=>"Filter", "order"=>"id_desc"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (1.2ms)[0m  [1mSHOW max_identifier_length[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(DISTINCT count_column) FROM (SELECT "users"."id" AS count_column FROM "users" LEFT OUTER JOIN "users" "referrals_users" ON "referrals_users"."referrer_id" = "users"."id" WHERE "referrals_users"."id" = 1 LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/index.html.arb (106.8ms)
+Completed 200 OK in 116.5ms (Views: 107.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2014-12-10 13:33:58 +0100
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/index.html.arb (103.7ms)
+Completed 200 OK in 107.1ms (Views: 103.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/users.csv" for 127.0.0.1 at 2014-12-10 13:34:04 +0100
+Processing by Admin::UsersController#index as CSV
+  [1m[36mAdminUser Load (0.7ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 10000 OFFSET 0
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/index.csv.erb (35.8ms)
+Completed 200 OK in 41.7ms (Views: 38.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/2" for 127.0.0.1 at 2014-12-10 13:34:25 +0100
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (3.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'User' AND "active_admin_comments"."resource_id" = '2' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'User' AND "active_admin_comments"."resource_id" = '2' AND "active_admin_comments"."namespace" = 'admin'
+  Rendered /Users/kevinb/.rvm/gems/ruby-2.1.1/gems/activeadmin-0.6.3/app/views/active_admin/resource/show.html.arb (44.4ms)
+Completed 200 OK in 54.0ms (Views: 46.2ms | ActiveRecord: 4.8ms)
